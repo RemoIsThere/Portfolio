@@ -4,153 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
-  <style>
-    /* Custom CSS styles */
-    body {
-      margin: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h1, h2, h3 {
-      color: #333;
-    }
-
-    p {
-      color: #666;
-    }
-
-    .img-container {
-      border: 2px solid #000;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .img-container img {
-      border-radius: 10px;
-    }
-
-    .navbar {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-brand {
-      font-weight: bold;
-      color: #333;
-    }
-
-    .navbar-nav .nav-link {
-      color: #666;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #333;
-    }
-
-    #intro {
-      background-color: #f5f5f5;
-      padding: 40px;
-      border-radius: 10px;
-    }
-
-    #projects, #work-experience, #about, #contact {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    #projects h2, #work-experience h2, #about h2, #contact h2 {
-      margin-bottom: 20px;
-    }
-
-    #projects p, #work-experience p, #about p, #contact p {
-      line-height: 1.6;
-    }
-
-    #projects p:last-child, #work-experience p:last-child, #about p:last-child, #contact p:last-child {
-      margin-bottom: 0;
-    }
-
-    #projects {
-      background-color: #f8f8f8;
-    }
-
-    #about {
-      background-color: #f5f5f5;
-    }
-
-    #contact {
-      background-color: #f8f8f8;
-    }
-
-    .btn-primary {
-      background-color: #333;
-      border-color: #333;
-    }
-
-    .btn-primary:hover {
-      background-color: #222;
-      border-color: #222;
-    }
-    #recommendation {
-      background-color: #f5f5f5;
-      padding: 40px;
-    }
-
-    #recommendation h2 {
-      font-size: 24px;
-      color: #333;
-    }
-
-    .recommendation-block {
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .recommendation-block:hover {
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .recommendation-block h4 {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .recommendation-block p {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .recommendation-modal .modal-body {
-      padding: 20px;
-    }
-
-    .recommendation-modal .modal-body h4 {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .recommendation-modal .modal-body p {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
-    }
-  </style>
-  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -173,6 +28,12 @@
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button id="dark-mode-toggle" class="btn btn-link nav-link">Dark Mode</button>
+        </li>
+      </ul>
+      
     </div>
   </nav>
 
@@ -192,7 +53,7 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ac tincidunt tincidunt, nunc nunc lacinia nunc, id lacinia nunc nunc id nunc. Nulla facilisi. Sed auctor, nunc id lacinia lacinia, nunc nunc lacinia nunc, id lacinia nunc nunc id nunc.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ac tincidunt tincidunt, nunc nunc lacinia nunc, id lacinia nunc nunc id nunc. Nulla facilisi. Sed auctor, nunc id lacinia lacinia, nunc nunc lacinia nunc, id lacinia nunc nunc id nunc.</p>
   </section>
 
   <section id="work-experience">
@@ -308,11 +169,10 @@ aria-labelledby="recommendationModalLabel3" aria-hidden="true">
   </div>
 </div>
 </div>
-
-  
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
+  <script src="script.js"></script>
 
+</body>
+</html>
