@@ -87,6 +87,39 @@ p {
   background-color: #f8f8f8;
 }
 
+.project-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.project-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects .row {
+  margin-left: -10px; /* Adjust for default Bootstrap padding */
+  margin-right: -10px; /* Adjust for default Bootstrap padding */
+}
+
+#projects .col-md-6 {
+  padding: 10px; /* Adjust for default Bootstrap padding */
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-item img:hover {
+  transform: scale(1.05);
+}
+
 #about {
   background-color: #f5f5f5;
 }
@@ -94,6 +127,42 @@ p {
 #contact {
   background-color: #f8f8f8;
 }
+
+/* Assuming your existing styles are retained */
+
+/* Flexbox styles for the grid layout */
+.contact-section {
+  text-align: center; /* Center the content horizontally */
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
+  gap: 20px; /* Add space between grid items */
+  max-width: 800px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Style for each grid item */
+.mail,
+.contact-number,
+.instagram {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+}
+
+
+
 
 .btn-primary {
   background-color: #333;
@@ -219,6 +288,75 @@ p {
   color: #ccc !important; /* Light text color on hover */
 }
 
+/* Light Mode */
+.project-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.project-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+.dark-mode .project-item {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+.dark-mode .project-item:hover {
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Light Mode */
+#projects .row {
+  margin-left: -10px; /* Adjust for default Bootstrap padding */
+  margin-right: -10px; /* Adjust for default Bootstrap padding */
+}
+
+#projects .col-md-6 {
+  padding: 10px; /* Adjust for default Bootstrap padding */
+}
+
+/* Dark Mode */
+.dark-mode #projects .row {
+  background-color: #222; /* Dark background color */
+  margin-left: -10px; /* Adjust for default Bootstrap padding */
+  margin-right: -10px; /* Adjust for default Bootstrap padding */
+}
+
+.dark-mode #projects .col-md-6 {
+  padding: 10px; /* Adjust for default Bootstrap padding */
+}
+
+/* Light Mode */
+.project-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode .project-item img {
+  filter: brightness(1.5); /* Slightly brighten the image */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.dark-mode .project-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1); /* Reset brightness on hover */
+}
+
 /* Image Rotate Animation */
 
 @property --a {
@@ -233,7 +371,25 @@ p {
   inherits: true;
 }
 
-img {
+/* Dark mode adjustments for the grid layout */
+.dark-mode .contact-grid {
+  background-color: #33333300; /* Dark background color */
+}
+
+.dark-mode .mail,
+.dark-mode .contact-number,
+.dark-mode .instagram {
+  background-color: #444; /* Darker background color for items */
+  color: #fff; /* Light text color */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.489); /* Adjust shadow color */
+}
+
+.dark-mode .contact-grid a {
+  color: #08a88b00; /* Green link color in dark mode */
+}
+
+
+#my-pic {
   --b: 10px; /* control the border thickness */
   --g: 20px; /* control the gap */
 
@@ -281,7 +437,7 @@ img {
   transition: --d 0.3s, --a 0.2s 0.2s;
 }
 
-img:hover {
+#my-pic:hover {
   --a: 0deg;
   --d: 71%;
   transition: --a 0.3s, --d 0.2s 0.2s;
