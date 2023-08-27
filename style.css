@@ -102,12 +102,12 @@ p {
 }
 
 #projects .row {
-  margin-left: -10px; /* Adjust for default Bootstrap padding */
-  margin-right: -10px; /* Adjust for default Bootstrap padding */
+  margin-left: -10px; 
+  margin-right: -10px;
 }
 
 #projects .col-md-6 {
-  padding: 10px; /* Adjust for default Bootstrap padding */
+  padding: 10px; 
 }
 
 .project-item img {
@@ -128,22 +128,19 @@ p {
   background-color: #f8f8f8;
 }
 
-/* Assuming your existing styles are retained */
 
-/* Flexbox styles for the grid layout */
 .contact-section {
-  text-align: center; /* Center the content horizontally */
+  text-align: center; 
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
-  gap: 20px; /* Add space between grid items */
-  max-width: 800px; /* Set a maximum width for the grid */
-  margin: 0 auto; /* Center the grid horizontally */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px; 
+  max-width: 800px;
+  margin: 0 auto; 
 }
 
-/* Style for each grid item */
 .mail,
 .contact-number,
 .instagram {
@@ -153,11 +150,10 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
-    gap: 15px; /* Reduce gap for smaller screens */
+    grid-template-columns: 1fr; 
+    gap: 15px; 
   }
 }
 
@@ -234,7 +230,6 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Update background color for different sections */
 .dark-mode #intro,
 .dark-mode #projects,
 .dark-mode #work-experience,
@@ -245,7 +240,6 @@ p {
   background-color: #222; /* Dark background */
 }
 
-/* Update font color for text elements */
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
@@ -257,7 +251,6 @@ p {
   color: #fff;
 }
 
-/* Update button styles */
 .dark-mode .btn-primary {
   background-color: #fff;
   border-color: #fff;
@@ -270,9 +263,8 @@ p {
   color: #222;
 }
 
-/* Update background color and font color for navbar */
 .dark-mode .navbar {
-  background-color: #222 !important; /* Dark background */
+  background-color: #222 !important; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -288,7 +280,6 @@ p {
   color: #ccc !important; /* Light text color on hover */
 }
 
-/* Light Mode */
 .project-item {
   margin-bottom: 20px;
   padding: 20px;
@@ -316,26 +307,25 @@ p {
 
 /* Light Mode */
 #projects .row {
-  margin-left: -10px; /* Adjust for default Bootstrap padding */
-  margin-right: -10px; /* Adjust for default Bootstrap padding */
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 #projects .col-md-6 {
-  padding: 10px; /* Adjust for default Bootstrap padding */
+  padding: 10px;
 }
 
 /* Dark Mode */
 .dark-mode #projects .row {
-  background-color: #222; /* Dark background color */
-  margin-left: -10px; /* Adjust for default Bootstrap padding */
-  margin-right: -10px; /* Adjust for default Bootstrap padding */
+  background-color: #222; 
+  margin-left: -10px; 
+  margin-right: -10px; 
 }
 
 .dark-mode #projects .col-md-6 {
-  padding: 10px; /* Adjust for default Bootstrap padding */
+  padding: 10px;
 }
 
-/* Light Mode */
 .project-item img {
   max-width: 100%;
   border-radius: 10px;
@@ -346,9 +336,8 @@ p {
   transform: scale(1.05);
 }
 
-/* Dark Mode */
 .dark-mode .project-item img {
-  filter: brightness(1.5); /* Slightly brighten the image */
+  filter: brightness(1.5); 
   transition: transform 0.3s, filter 0.3s;
 }
 
@@ -371,27 +360,26 @@ p {
   inherits: true;
 }
 
-/* Dark mode adjustments for the grid layout */
 .dark-mode .contact-grid {
-  background-color: #33333300; /* Dark background color */
+  background-color: #33333300; 
 }
 
 .dark-mode .mail,
 .dark-mode .contact-number,
 .dark-mode .instagram {
-  background-color: #444; /* Darker background color for items */
-  color: #fff; /* Light text color */
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.489); /* Adjust shadow color */
+  background-color: #444; 
+  color: #fff; 
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.489); 
 }
 
 .dark-mode .contact-grid a {
-  color: #08a88b00; /* Green link color in dark mode */
+  color: #08a88b00; 
 }
 
 
 #my-pic {
-  --b: 10px; /* control the border thickness */
-  --g: 20px; /* control the gap */
+  --b: 10px; 
+  --g: 20px; 
 
   --d: 30%;
   --a: 45deg;
@@ -431,8 +419,8 @@ p {
       calc(var(--_f) * cos(-45deg + var(--a)))
   );
 
-  outline: 166px solid #2c2c2c; /* color here */
-  outline-offset: 2px; /* a small value to avoid a visual glitch */
+  outline: 166px solid #2c2c2c;
+  outline-offset: 2px;
   cursor: pointer;
   transition: --d 0.3s, --a 0.2s 0.2s;
 }
