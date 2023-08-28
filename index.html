@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel = "icon" href = 
+"https://static.vecteezy.com/system/resources/previews/000/351/131/non_2x/portfolio-vector-icon.jpg" 
+        type = "image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>Rehmat's Portfolio</title>
 </head>
@@ -29,7 +32,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link"
-          href="#recommendation">Recommendations</a>
+          href="#recommendation">Recommendation</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -59,7 +62,9 @@
     <h2>Projects</h2>
     <p><i>During the course of my studies, I have worked on various projects in the account of 2 years. My most of the projects revolve around web development and IoT projects.</i> <b>Some of the notable ones are as follows-</b></p>
     
+    <!-- Add a new div for the grid layout -->
     <div class="row">
+      <!-- First Subsection -->
       <div class="col-md-6">
         <div class="project-item">
           <img src="images/project1.png" alt="Project 1">
@@ -68,6 +73,7 @@
         </div>
       </div>
       
+      <!-- Second Subsection -->
       <div class="col-md-6">
         <div class="project-item">
           <img src="images/project2.png" alt="Project 2">
@@ -126,28 +132,29 @@
   
 
   <div id="recommendation">
-    <h2>Recommendations</h2>
+    <h2>Recommendation</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="recommendation-block" data-toggle="modal" data-target="#recommendationModal1">
-          <h4>Person 1</h4>
-          <p>Recommendation 1 (in short)</p>
+          <h4>Title 1</h4>
+          <p>Description 1 (short)</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="recommendation-block" data-toggle="modal" data-target="#recommendationModal2">
-          <h4>Person 2</h4>
-          <p>Recommendation 2 (in short)</p>
+          <h4>Title 2</h4>
+          <p>Description 2 (short)</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="recommendation-block" data-toggle="modal" data-target="#recommendationModal3">
-          <h4>Person 3</h4>
-          <p>Recommendation 3 (in short)</p>
+          <h4>Title 3</h4>
+          <p>Description 3 (short)</p>
         </div>
       </div>
     </div>
   
+    <!-- Recommendation Modal 1 -->
     <div class="modal fade recommendation-modal" id="recommendationModal1" tabindex="-1" role="dialog"
       aria-labelledby="recommendationModalLabel1" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -159,8 +166,8 @@
             </button>
           </div>
           <div class="modal-body">
-            <h4>Person 1</h4>
-            <p>Description (long)</p>
+            <h4>Title 1</h4>
+            <p>Description 1 (long)</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -169,6 +176,7 @@
       </div>
     </div>
   
+    <!-- Recommendation Modal 2 -->
     <div class="modal fade recommendation-modal" id="recommendationModal2" tabindex="-1" role="dialog"
       aria-labelledby="recommendationModalLabel2" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -180,8 +188,8 @@
             </button>
           </div>
           <div class="modal-body">
-            <h4>Person 2</h4>
-            <p>Description (long)</p>
+            <h4>Title 2</h4>
+            <p>Description 2 (long)</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -189,6 +197,7 @@
         </div>
       </div>
     </div>
+    <!-- Recommendation Modal 3 -->
 <div class="modal fade recommendation-modal" id="recommendationModal3" tabindex="-1" role="dialog"
 aria-labelledby="recommendationModalLabel3" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -200,8 +209,8 @@ aria-labelledby="recommendationModalLabel3" aria-hidden="true">
       </button>
     </div>
     <div class="modal-body">
-      <h4>Person 3</h4>
-      <p>Description (long)</p>
+      <h4>Title 3</h4>
+      <p>Description 3 (long)</p>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
