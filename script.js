@@ -1,19 +1,6 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const darkModeToggle = document.getElementById("darkModeToggle");
-//     const body = document.body;
-  
-//     darkModeToggle.addEventListener("click", function() {
-//       body.classList.toggle("dark-mode");
-//     });
-//   });
-  // Get the dark mode toggle button element
 const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-// Get the body element
 const body = document.body;
-
-// Check if dark mode preference is set
-const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+const isDarkMode = localStorage.getItem("darkMode") === "disabled";
 
 // Function to enable dark mode
 function enableDarkMode() {
@@ -27,12 +14,10 @@ function disableDarkMode() {
   localStorage.setItem("darkMode", "disabled");
 }
 
-// Initialize dark mode based on user preference
 if (isDarkMode) {
   enableDarkMode();
 }
 
-// Toggle dark mode on button click
 darkModeToggle.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
     disableDarkMode();
@@ -40,3 +25,25 @@ darkModeToggle.addEventListener("click", () => {
     enableDarkMode();
   }
 });
+
+function copyEmail() {
+  var email = "rehmat4813.be21@chitkara.edu.in";
+  var tempInput = document.createElement("input");
+  tempInput.value = email;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  alert("Email address copied to clipboard!");
+}
+
+function copyPhoneNumber() {
+  var phoneNumber = "+917988199822";
+  var tempInput = document.createElement("input");
+  tempInput.value = phoneNumber;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  alert("Phone number copied to clipboard!");
+}
