@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Rehmat's Portfolio</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Rehmat's Portfolio</a>
@@ -46,9 +47,10 @@
         <div class="col-md-6">
           <img id="my-pic" src="images/my_pic.png" alt="Your Image" class="img-fluid">
         </div>
-        <div class="col-md-6"><br><br><br><br><br><br><br>
-          <h1>Rehmat Kumar</h1>
-          <p>UI/UX Designer and Front End Developer</p>
+        <div class="col-md-6">
+          <br><br><br><br><br><br><br>
+          <h1 class="text-md-right">Rehmat Kumar</h1>
+          <p class="text-md-right">UI/UX Designer and Front End Developer</p>
         </div>
       </div>
     </div>
@@ -88,6 +90,7 @@
       For UI/UX designing, I have recently shown interest in this and am currently learning it more and more by the time. <br>
       I feel like i can make a good UI/UX design with the time given. <br><br>
       Professionally, I have been a social enterpeneur in the NGO- <a href="https://hamaripahchan.org/">Hamari Pahchan</a>.
+ <br>
       I am eager to work on the projects that include both the designing and the frontend development.
     </p>
   </section>
@@ -108,22 +111,15 @@
     </div>
   </section>
 
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <div class="container contact-grid">
-      <div class="mail">
-        <p>
-          rehmat4813.be21@chitkara.edu.in
-        </p>
-      </div>
-      <div class="contact-number">
-        <p>+91 7988199822</p>
-      </div>
-      <div class="instagram">
-        <p>@whoisrehmat</p>
-      </div>
-    </div>
-  </section>
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <div class="container contact-grid">
+    <button class="mail-button" onclick="copyEmail()">Email</button>
+    <button class="phone-button" onclick="copyPhoneNumber()">Phone Number</button>
+    <a class="github-button" href="https://github.com/RemoIsThere" target="_blank">Github</a>
+  </div>
+</section>
+
 
 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
