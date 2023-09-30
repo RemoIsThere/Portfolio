@@ -5,7 +5,7 @@ body {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 h1,
@@ -303,6 +303,16 @@ p {
 
 .dark-mode .navbar-nav .nav-link:hover {
   color: #ccc !important; /* Light text color on hover */
+}
+
+.dark-mode .github-button {
+  background-color: #5d5d5d;
+  color: #fff;
+}
+
+.dark-mode .github-button:hover {
+  text-decoration: none;
+  color: #fff; /* Adjust text color on hover if needed */
 }
 
 /* Light Mode */
